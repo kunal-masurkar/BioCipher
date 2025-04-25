@@ -14,7 +14,7 @@ A secure file encryption and management system built with Flask.
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/biocipher.git
+git clone https://github.com/kunal-masurkar/biocipher.git
 cd biocipher
 ```
 
@@ -63,4 +63,4 @@ This application is configured for deployment on Render. The `render.yaml` file 
 
 ## License
 
-MIT License 
+Apache2.0 License 
