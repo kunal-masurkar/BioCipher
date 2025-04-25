@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: biocipher
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.9.0
+      - key: SECRET_KEY
+        generateValue: true
+      - key: ENCRYPTION_KEY
+        generateValue: true
+      - key: ADMIN_USERNAME
+        value: admin
+      - key: ADMIN_PASSWORD
+        value: admin@123!
+      - key: RECAPTCHA_SITE_KEY
+        value: 6LfNleIqAAAAADTRvsuzE4ikRTsSQjgi-yRp3S-G
+      - key: RECAPTCHA_SECRET_KEY
+        value: 6LfNleIqAAAAABAgZYk6Le5k1AITiqpCIeutqbIv 
